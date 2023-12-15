@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "wdio": "wdio run ./wdio.conf.mts"
   },
   "dependencies": {
     "next": "latest",
@@ -11,8 +12,16 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@wdio/browser-runner": "^8.26.2",
+    "@wdio/cli": "^8.26.2",
+    "@wdio/mocha-framework": "^8.26.2",
+    "@wdio/spec-reporter": "^8.26.2",
+    "ts-node": "^10.9.2",
     "typescript": "^4.7.4"
   }
 }
